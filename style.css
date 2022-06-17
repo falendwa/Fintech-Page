@@ -1,0 +1,1000 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding-top: 70px;
+    margin: 0 20vw;
+    padding-bottom: 250px;
+    overflow: hidden;
+}
+
+.container-2 {
+    padding-top: 100px;
+    margin: 0 10vw;
+    overflow: hidden;
+}
+
+.container-4 {
+    padding-top: 100px;
+    margin: 0 10vw;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.jumbo-5 {
+    background-color: #191dfc;
+    margin-top: -5px;
+}
+
+.container-5 {
+    padding-top: 50px;
+    margin: 0 10vw;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.jumbo-6 {
+    margin-top: -5px;
+    background-color: whitesmoke;
+}
+
+.jumbo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    background: whitesmoke;
+    padding-bottom: 200px;
+}
+
+.container-form {
+    width: 50%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    border-bottom: thin 5px #888;
+    width: 100%;
+    z-index: 99;
+    height: 70px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-shadow: 0 5px rgb(241, 239, 239);
+}
+
+.navbar-grid {
+    display: grid;
+    grid-template-areas: 'logo konten contact';
+    justify-content: space-around;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+}
+
+/* Navbar logo */
+
+.navbar-logo {
+    grid-area: logo;
+    display: flex;
+    height: 70px;
+    align-content: center;
+}
+
+.navbar-logo-gambar img {
+    height: 50px;
+}
+
+.navbar-logo p {
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+}
+
+/* Akhir Navbar Logo */
+
+.navbar-content {
+    grid-area: konten;
+    display: grid;
+    width: 400px;
+    grid-template-areas: 'products payment pricing about ';
+}
+
+/* Navbar Content */
+
+.navbar-content-product p:hover {
+    background-color: #0060b6;
+    color: white;
+    width: 100%;
+    justify-self: center;
+}
+
+.navbar-content-payments p:hover {
+    background-color: #0060b6;
+    color: white;
+}
+
+.navbar-content-pricing p:hover {
+    background-color: #0060b6;
+    color: white;
+}
+
+.navbar-content-about-us p:hover {
+    background-color: #0060b6;
+    color: white;
+}
+
+.navbar-content-product {
+    grid-area: products;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-content-product a p {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-content-payments {
+    grid-area: payment;
+    display: inline-block;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navbar-content-payments a p {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-content-pricing {
+    grid-area: pricing;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-content-pricing a p {
+    color: black;
+    font-size: 18px;
+}
+
+.navbar-content-about-us {
+    grid-area: about;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.navbar-content-about-us a p {
+    color: black;
+    font-size: 18px;
+}
+
+/* Akhir Navbar Content*/
+
+/* Navbar Contact */
+
+.navbar-contact {
+    grid-area: contact;
+}
+
+.navbar-contact-grid {
+    height: 45px;
+    line-height: 45px;
+    width: 180%;
+    text-align: center;
+    background-color: #363aff;
+    border-radius: 10px;
+    box-shadow: 3px 5px rgb(226, 225, 225);
+}
+
+.navbar-contact-grid p {
+    color: white;
+    font-size: 1em;
+}
+
+/* Akhir Navbar Contact */
+
+.konten-1-grid {
+    display: grid;
+    padding-top: 200px;
+    grid-template-areas: 
+        'konten-1-judul konten-1-judul'
+        'konten-1-subjudul konten-1-subjudul'
+        'konten-1-button-build konten-1-button-schedule'
+        ;
+    gap: 50px;
+    text-align: center;
+}
+
+.konten-1-judul {
+    grid-area: konten-1-judul;
+}
+
+.konten-1-judul h1 {
+    font-size: 50px;
+    color: rgb(15, 3, 95);
+}
+
+.konten-1-subjudul {
+    grid-area: konten-1-subjudul;
+    font-size: 22px;
+}
+
+.konten-1-subjudul p {
+    color: black;
+}
+
+.konten-1-button-build {
+    grid-area: konten-1-button-build;
+    font-size: 20px;
+    background-color: #363aff;
+    height: 2.2em;
+    width: 10em;
+    line-height: 2.2em;
+    border-radius: 20px;
+    box-shadow: 3px 5px rgb(221, 220, 220);
+}
+
+.konten-1-button-build p {
+    color: white;
+}
+
+.konten-1-button-schedule {
+    grid-area: konten-1-button-schedule;
+    font-size: 20px;
+    height: 2.2em;
+    width: 10em;
+    line-height: 2.2em;
+    border-radius: 20px;
+    box-shadow: 3px 5px rgb(221, 220, 220);
+}
+
+.konten-1-button-schedule p {
+    color: #363aff;
+}
+
+/* Akhir Konten 1 */
+
+/* Konten 2 */
+
+.konten-2-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-2-gambar konten-2-agregasi'
+        'konten-2-gambar konten-2-judul'
+        'konten-2-gambar konten-2-subjudul'
+        'konten-2-gambar konten-2-link'
+        ;
+    grid-template-columns: 1.2fr 1fr;    
+}
+
+.konten-2-gambar {
+    grid-area: konten-2-gambar;
+}
+
+.konten-2-agregasi {
+    grid-area: konten-2-agregasi;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: left;
+    align-content: end;
+}
+
+.konten-2-agregasi h5 {
+    color: #363aff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.konten-2-judul {
+    grid-area: konten-2-judul;
+    width: 100%;
+    display: grid;
+    justify-content: left;
+}
+
+.konten-2-judul h2 {
+    color: rgb(15, 3, 95);
+    font-size: 80px;
+}
+
+.konten-2-judul h2 {
+    font-size: 30px;
+}
+
+.konten-2-subjudul {
+    grid-area: konten-2-subjudul;
+    text-align: justify;
+}
+
+.konten-2-subjudul p {
+    color: rgb(15, 3, 95);
+    font-size: 18px;
+}
+
+.konten-2-link {
+    grid-area: konten-2-link;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-content: start;
+}
+
+.konten-2-link a {
+    text-decoration: underline rgb(15, 3, 95);;
+    color: rgb(15, 3, 95);
+}
+
+/* Akhir Konten 2 */
+
+/* Konten 3 */
+
+.konten-3-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-3-agregasi konten-3-gambar'
+        'konten-3-judul konten-3-gambar'
+        'konten-3-subjudul konten-3-gambar'
+        'konten-3-link konten-3-gambar'
+        ;
+    grid-template-columns: 1fr 1.2fr;    
+}
+
+.konten-3-gambar {
+    grid-area: konten-3-gambar;
+}
+
+.konten-3-agregasi {
+    grid-area: konten-3-agregasi;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: right;
+    align-content: end;
+}
+
+.konten-3-agregasi h5 {
+    color: #363aff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.konten-3-judul {
+    grid-area: konten-3-judul;
+    display: grid;
+    width: 100%;
+    justify-content: right;
+}
+
+.konten-3-judul h2 {
+    color: rgb(15, 3, 95);
+    font-size: 80px;
+}
+
+.konten-3-judul h2 {
+    font-size: 30px;
+}
+
+.konten-3-subjudul {
+    grid-area: konten-3-subjudul;
+    text-align: right;
+}
+
+.konten-3-subjudul p {
+    color: rgb(15, 3, 95);
+    font-size: 18px;
+}
+
+.konten-3-link {
+    grid-area: konten-3-link;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: right;
+    align-content: start;
+}
+
+.konten-3-link a {
+    text-decoration: underline rgb(15, 3, 95);;
+    color: rgb(15, 3, 95);
+}
+
+/* Akhir Konten 3 */
+
+/* Konten 4 */
+
+.konten-4-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-4-gambar konten-4-agregasi'
+        'konten-4-gambar konten-4-judul'
+        'konten-4-gambar konten-4-subjudul'
+        'konten-4-gambar konten-4-link'
+        ;
+    grid-template-columns: 1.2fr 1fr;    
+}
+
+.konten-4-gambar {
+    grid-area: konten-4-gambar;
+}
+
+.konten-4-agregasi {
+    grid-area: konten-4-agregasi;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: left;
+    align-content: end;
+}
+
+.konten-4-agregasi h5 {
+    color: #363aff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.konten-4-judul {
+    grid-area: konten-4-judul;
+    display: grid;
+    width: 100%;
+    justify-content: left;
+}
+
+.konten-4-judul h2 {
+    color: rgb(15, 3, 95);
+    font-size: 80px;
+}
+
+.konten-4-judul h2 {
+    font-size: 30px;
+}
+
+.konten-4-subjudul {
+    grid-area: konten-4-subjudul;
+    text-align: justify;
+}
+
+.konten-4-subjudul p {
+    color: rgb(15, 3, 95);
+    font-size: 18px;
+}
+
+.konten-4-link {
+    grid-area: konten-4-link;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-content: start;
+}
+
+.konten-4-link a {
+    text-decoration: underline rgb(15, 3, 95);;
+    color: rgb(15, 3, 95);
+}
+
+/* Akhir Konten 4 */
+
+/* Konten 5 */
+
+.konten-5 {
+    padding-bottom: 100px;
+}
+
+.konten-5 h5{
+    color: white;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.konten-5 h2 {
+    color: white;
+    font-size: 45px;
+}
+
+.konten-5-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-5-grid-lending konten-5-grid-payments konten-5-grid-personalfinance'
+        'konten-5-grid-subjudul-1 konten-5-grid-subjudul-2 konten-5-grid-subjudul-3'
+        'konten-5-grid-link-1 konten-5-grid-link-2 konten-5-grid-link-3'
+        ;
+
+}
+
+.konten-5-grid h3,p {
+    color: white;
+}
+
+.konten-5-grid h3 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.konten-5-grid p {
+    font-size: 18px;
+    text-align:justify;
+    padding-bottom: 15px;
+}
+
+.konten-5-grid a p {
+    text-decoration: underline white;
+    font-size: 1em;
+}
+
+.konten-5-grid-lending {
+    grid-area: konten-5-grid-lending;
+    width: 100%;
+    text-align: center;
+}
+
+.konten-5-grid-subjudul-1 {
+    grid-area: konten-5-grid-subjudul-1;
+    width: 75%;
+}
+
+.konten-5-grid-link-1 {
+    grid-area: konten-5-grid-link-1;
+    width: 75%;
+}
+
+.konten-5-grid-payments {
+    grid-area: konten-5-grid-payments;
+    width: 100%;
+    text-align: center;
+}
+
+.konten-5-grid-subjudul-2 {
+    grid-area: konten-5-grid-subjudul-2;
+    width: 75%;
+}
+
+.konten-5-grid-link-2 {
+    grid-area: konten-5-grid-link-2;
+    width: 75%;
+}
+
+.konten-5-grid-personalfinance {
+    grid-area: konten-5-grid-personalfinance;
+    width: 100%;
+    text-align: center;
+}
+    
+
+.konten-5-grid-subjudul-3 {
+    grid-area: konten-5-grid-subjudul-3;
+    width: 75%;
+}
+
+.konten-5-grid-link-3 {
+    grid-area: konten-5-grid-link-3;
+    width: 75%;
+}
+
+/* Akhir Konten 5 */
+
+/* Konten 6 */
+
+.konten-6-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-6-grid-news konten-6-grid-news konten-6-grid-news'
+        'konten-6-grid-news-1 konten-6-grid-news-2 konten-6-grid-news-3'
+        ;
+    grid-template-columns: 23vw 23vw 23vw;
+    justify-content: space-between;
+}
+
+.konten-6-grid-news {
+    width: 100%;
+    grid-area: konten-6-grid-news;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.konten-6-grid-news h2 {
+    font-size: 35px;
+    color: rgb(100, 100, 100);
+}
+
+.konten-6-grid-news-1 {
+    grid-area: konten-6-grid-news-1;
+    border: 3px rgb(240, 240, 240) solid;
+    background-color: white;
+}
+
+.konten-6-grid-news-2 {
+    grid-area: konten-6-grid-news-2;
+    border: 3px rgb(240, 240, 240) solid;
+    background-color: white;
+}
+
+.konten-6-grid-news-3 {
+    grid-area: konten-6-grid-news-3;
+    border: 3px rgb(240, 240, 240) solid;
+    background-color: white;
+}
+
+.konten-6-grid-news-1 {
+    display: grid;
+    grid-template-areas: 
+        'konten-6-grid-gambar-1'
+        'konten-6-grid-judul-1'
+        'konten-6-grid-subjudul-1'
+        ;
+    width: 100%;
+    height: 100%;
+    align-content: start;   
+}
+
+.konten-6-grid-gambar-1 {
+    grid-area: konten-6-grid-gambar-1;
+    display: flex;
+}
+
+.konten-6-grid-judul-1 {
+    grid-area: konten-6-grid-judul-1;
+    text-align: center;
+}
+
+.konten-6-grid-judul-1 h3 {
+    color: rgb(100, 100, 100)
+}
+
+.konten-6-grid-subjudul-1 {
+    grid-area: konten-6-grid-subjudul-1;
+    text-align: center;
+}
+
+.konten-6-grid-subjudul-1 h5 {
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+}
+
+.konten-6-grid-news-2 {
+    display: grid;
+    grid-template-areas: 
+        'konten-6-grid-gambar-2'
+        'konten-6-grid-judul-2'
+        'konten-6-grid-subjudul-2'
+        ;
+    width: 100%;
+    height: 100%;
+    align-content: start;
+}
+
+.konten-6-grid-gambar-2 {
+    grid-area: konten-6-grid-gambar-2;
+    display: flex;
+}
+
+.konten-6-grid-judul-2 {
+    grid-area: konten-6-grid-judul-2;
+    text-align: center;
+}
+
+.konten-6-grid-judul-2 h3 {
+    color: rgb(100, 100, 100);
+}
+
+.konten-6-grid-subjudul-2 {
+    grid-area: konten-6-grid-subjudul-2;
+    text-align: center;
+}
+
+.konten-6-grid-subjudul-2 h5 {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.konten-6-grid-news-3 {
+    display: grid;
+    grid-template-areas: 
+        'konten-6-grid-gambar-3'
+        'konten-6-grid-judul-3'
+        'konten-6-grid-subjudul-3'
+        ;
+    width: 100%;
+    height: 100%;
+    align-content: start;
+}
+
+.konten-6-grid-gambar-3 {
+    grid-area: konten-6-grid-gambar-3;
+    display: flex;
+}
+
+.konten-6-grid-judul-3 {
+    grid-area: konten-6-grid-judul-3;
+    text-align: center;
+}
+
+.konten-6-grid-judul-3 h3 {
+    color: rgb(100, 100, 100);
+}
+
+.konten-6-grid-subjudul-3 {
+    grid-area: konten-6-grid-subjudul-3;
+    text-align: center;
+}
+
+.konten-6-grid-subjudul-3 h5 {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+}
+
+.konten-6-grid-gambar-1 img {
+    height: 150px;
+}
+
+.konten-6-grid-gambar-2 img {
+    height: 150px;
+}
+
+.konten-6-grid-gambar-3 img {
+    height: 150px;
+}
+
+/* Akhir Konten 6 */
+
+/* Konten 7 */
+
+.konten-7 {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.konten-7 h2 {
+    color: white;
+    font-size: 45px;
+}
+
+.konten-7-grid {
+    display: grid;
+    grid-template-areas:
+        'konten-7-grid-lending konten-7-grid-payments konten-7-grid-personalfinance'
+        'konten-7-grid-subjudul-1 konten-7-grid-subjudul-2 konten-7-grid-subjudul-3'
+        ;
+
+}
+
+.konten-7-grid h3,p {
+    color: white;
+}
+
+.konten-7-grid h3 {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.konten-7-grid p {
+    font-size: 18px;
+    text-align:justify;
+    padding-bottom: 15px;
+}
+
+.konten-7-grid a p {
+    text-decoration: underline white;
+    font-size: 1em;
+}
+
+.konten-7-grid-lending {
+    grid-area: konten-7-grid-lending;
+    width: 100%;
+    text-align: center;
+}
+
+.konten-7-grid-subjudul-1 {
+    grid-area: konten-7-grid-subjudul-1;
+    width: 75%;
+}
+
+.konten-7-grid-payments {
+    grid-area: konten-7-grid-payments;
+    width: 100%;
+    text-align: center;
+}
+
+.konten-7-grid-subjudul-2 {
+    grid-area: konten-7-grid-subjudul-2;
+    width: 75%;
+}
+
+.konten-7-grid-personalfinance {
+    grid-area: konten-7-grid-personalfinance;
+    width: 100%;
+    text-align: center;
+}
+    
+
+.konten-7-grid-subjudul-3 {
+    grid-area: konten-7-grid-subjudul-3;
+    width: 75%;
+}
+
+/* Akhir Konten 7 */
+
+/* Form */
+
+.form-h2 {
+    font-size: 50px;
+    color: rgb(15, 3, 95);
+    text-align: center;
+}
+
+.form-p {
+    padding-bottom: 100px;
+    color: rgb(15, 3, 95);
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.wrapper .box {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.wrapper .box input {
+    width: 100%;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #363aff;
+    transition: 0.3s linear;
+}
+
+.wrapper .box input:focus,
+.wrapper .box input:valid {
+    padding: 20px 10px;
+    background: #363aff;
+    margin-top: 10px;
+}
+
+.wrapper .box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(15, 3, 95);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.3s linear;
+}
+
+.wrapper .box input:focus ~ label,
+.wrapper .box input:valid ~ label {
+    padding: 0;
+}
+
+.form-option-label {
+    background: whitesmoke;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(15, 3, 95);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    transition: 0.3s linear;
+}
+
+.wrapper .box select {
+    width: 100%;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    justify-content: center;
+    outline: none;
+    border-bottom: 1px solid #363aff;
+    transition: 0.3s linear;
+}
+
+.wrapper .box select:focus,
+.wrapper .box select:valid {
+    padding: 20px 10px;
+    background: #363aff;
+    margin-top: 10px;
+}
+
+.wrapper .box select:focus ~ label,
+.wrapper .box select:valid ~ label {
+    padding: 0;
+}
+
+.submit {
+    display: flex;
+    width: 20%;
+    font-size: 20px;
+    background: #363aff;
+    border: none;
+    color: white;
+    outline: none;
+    justify-content: center;
+    height: 37px;
+    border-radius: 25px;
+}
+
+/* Akhir Form */
+
+/* Footer */
+
+footer {
+    background-color: rgb(0, 0, 50);
+    height: 400px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-areas: 
+        'fproducts fusecase fabout fkosong';
+    justify-content: left;
+    padding-top: 30px;
+}
+
+.footer-products {
+    grid-area: fproducts;
+    color: white;
+}
+
+.list a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list1 a {
+    color: white;
+}
+
+.footer-usecase {
+    grid-area: fusecase;
+    color: white;
+}
+
+.footer-about {
+    grid-area: fabout;
+    color: white;
+}
+
+.footer-kosong {
+    grid-area: fkosong;
+    color: white;
+}
+
+/* Akhir Footer */
+
